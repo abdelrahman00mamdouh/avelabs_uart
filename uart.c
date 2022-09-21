@@ -1,4 +1,7 @@
- void SWUART_init(uint32_t baudrate){
+ "############# Uart.c ##############"
+#include "uart.h"
+
+void SWUART_init(uint32_t baudrate){
  UBRRL =baudrate;
  set_bit(UCSRB,RXEN);
  set_bit(UCSRB,TXEN);
